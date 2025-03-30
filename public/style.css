@@ -1,0 +1,279 @@
+/* ===== General Page Styling ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Header Section ===== */
+header {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* ===== Create New Post Button ===== */
+.new-post-btn {
+    background: white;
+    color: #ff416c;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.new-post-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Post Container (Index Page) ===== */
+.post-container {
+    width: 90%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+/* ===== Individual Post ===== */
+.post {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px 0;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Username Styling ===== */
+.user {
+    font-style: italic;
+    font-weight: bold;
+    color: #ff416c;
+}
+
+/* ===== Post Content Styling ===== */
+.content {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* ===== Post Actions (Buttons & Links) ===== */
+.post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* Buttons Styling */
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* View Button */
+.view-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.view-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #1e7e34;
+}
+
+/* Delete Button */
+.delete-form {
+    display: inline;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* ===== Edit Post Page Styling ===== */
+.edit-container {
+    background: white;
+    padding: 25px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 50px;
+}
+
+.edit-container h2 {
+    color: #ff416c;
+    margin-bottom: 10px;
+}
+
+.edit-container p {
+    color: #555;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Textarea */
+.edit-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+.edit-textarea:focus {
+    border-color: #ff416c;
+}
+
+/* Save Button */
+.save-btn {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.save-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Create New Post Form Styling ===== */
+.create-container {
+    background: white;
+    padding: 25px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 50px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff416c;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .post-container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .post-actions {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .edit-container, .create-container {
+        width: 95%;
+    }
+}
